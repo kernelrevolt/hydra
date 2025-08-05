@@ -1,0 +1,5 @@
+#EXTINF:-1 tvg-id="globohdr" group-title="Abertos" tvg-name="Globo"tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/c6/Rede_Globo_logo.svg",Globo
+http://pfsv.io/live/gz5627/SA8763/251777.m3u8
+#EXTINF:-1 tvg-id="watch_netflix" group-title="Sobre" tvg-name="Netflix"tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2560px-Netflix_2015_logo.svg.png",Netflix
+http://emisv.vip:80/get.php?username=tgmachado&password=anaclara2024&type=m3u_plus&output=ts
+
