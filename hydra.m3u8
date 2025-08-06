@@ -2,7 +2,7 @@
 #EXTINF:-1 tvg-id="tvglobo" group-title="Abertos" tvg-name="Globo"tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/1f/TV_Globo_logo_(April_2025).png",Globo
 http://pfsv.io/live/gz5627/SA8763/251777.m3u8
 #EXTINF:-1 tvg-id="watch_netflix" group-title="Hydra" tvg-name=" "tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2560px-Netflix_2015_logo.svg.png",
-http://relogio10.top:80/get.php?username=036697532&password=727858479&type=m3u_plus&output=hls
+http://relogio10.top:80/get.php?username=036697532&password=727858479&type=m3u&output=m3u
 
 http://relogio10.top/get.php?username=036697532&password=727858479&type=m3u_plus&output=m3u
 ############################################################################################
