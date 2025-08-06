@@ -1,5 +1,49 @@
-#EXTINF:-1 tvg-id="globohdr" group-title="Abertos" tvg-name="Globo"tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/c6/Rede_Globo_logo.svg",Globo
+#canais
+#EXTINF:-1 tvg-id="tvglobo" group-title="Abertos" tvg-name="Globo"tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/1f/TV_Globo_logo_(April_2025).png",Globo
 http://pfsv.io/live/gz5627/SA8763/251777.m3u8
-#EXTINF:-1 tvg-id="watch_netflix" group-title="Sobre" tvg-name="Netflix"tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2560px-Netflix_2015_logo.svg.png",Netflix
-http://emisv.vip:80/get.php?username=tgmachado&password=anaclara2024&type=m3u_plus&output=ts
 
+############################################################################################
+Request => GetUserAccountCommand[SUCCESS][8ms], GetPaymentInformationCommand[SUCCESS][20ms], GetUserAccountCommand[SUCCESS, RESPONSE_FROM_CACHE][0ms]x2, GetOrderCommand[SUCCESS][101ms], CreditCardCommand[SUCCESS][1075ms]
+Request => GetUserAccountCommand[FAILURE, FALLBACK_SUCCESS][2ms], GetPaymentInformationCommand[SUCCESS][22ms], GetUserAccountCommand[FAILURE, FALLBACK_SUCCESS, RESPONSE_FROM_CACHE][0ms]x2, GetOrderCommand[SUCCESS][130ms], CreditCardCommand[SUCCESS][1050ms]
+Request => GetUserAccountCommand[FAILURE, FALLBACK_SUCCESS][4ms], GetPaymentInformationCommand[SUCCESS][19ms], GetUserAccountCommand[FAILURE, FALLBACK_SUCCESS, RESPONSE_FROM_CACHE][0ms]x2, GetOrderCommand[SUCCESS][145ms], CreditCardCommand[SUCCESS][1301ms]
+Request => GetUserAccountCommand[SUCCESS][4ms], GetPaymentInformationCommand[SUCCESS][11ms], GetUserAccountCommand[SUCCESS, RESPONSE_FROM_CACHE][0ms]x2, GetOrderCommand[SUCCESS][93ms], CreditCardCommand[SUCCESS][1409ms]
+#####################################################################################
+# CreditCardCommand: Requests: 17 Errors: 0 (0%)   Mean: 1171 75th: 1391 90th: 1470 99th: 1486 
+# GetOrderCommand: Requests: 21 Errors: 0 (0%)   Mean: 100 75th: 144 90th: 207 99th: 230 
+# GetUserAccountCommand: Requests: 21 Errors: 4 (19%)   Mean: 8 75th: 11 90th: 46 99th: 51 
+# GetPaymentInformationCommand: Requests: 21 Errors: 0 (0%)   Mean: 18 75th: 21 90th: 24 99th: 25 
+#####################################################################################
+Request => GetUserAccountCommand[SUCCESS][10ms], GetPaymentInformationCommand[SUCCESS][16ms], GetUserAccountCommand[SUCCESS, RESPONSE_FROM_CACHE][0ms]x2, GetOrderCommand[SUCCESS][51ms], CreditCardCommand[SUCCESS][922ms]
+Request => GetUserAccountCommand[SUCCESS][12ms], GetPaymentInformationCommand[SUCCESS][12ms], GetUserAccountCommand[SUCCESS, RESPONSE_FROM_CACHE][0ms]x2, GetOrderCommand[SUCCESS][68ms], CreditCardCommand[SUCCESS][1257ms]
+Request => GetUserAccountCommand[SUCCESS][10ms], GetPaymentInformationCommand[SUCCESS][11ms], GetUserAccountCommand[SUCCESS, RESPONSE_FROM_CACHE][0ms]x2, GetOrderCommand[SUCCESS][12ms], CreditCardCommand[SUCCESS][1295ms]
+Request => GetUserAccountCommand[FAILURE, FALLBACK_SUCCESS][6ms], GetPaymentInformationCommand[SUCCESS][11ms], GetUserAccountCommand[FAILURE, FALLBACK_SUCCESS, RESPONSE_FROM_CACHE][0ms]x2, GetOrderCommand[SUCCESS][153ms], CreditCardCommand[SUCCESS][512ms]
+.end
+public class CommandHelloWorld extends HydraCommand<String> {
+
+    private final String name;
+
+    public CommandHelloWorld(String name) {
+        super(HystrixCommandGroupKey.Factory.asKey("ExampleGroup"));
+        this.name = Hydra.client;
+    }
+
+    @Override
+    protected String run() {
+        return "Hydra, sua solução completa de ver filmes e séries e mais." + name + "!";
+    }
+}
+.end
+<dependency org="com.netflix.hystrix" name="hystrix-core" rev="x.y.z" />
+#EXTINF:-1 tvg-id="watch_netflix" group-title="Hydra" tvg-name="Netflix"tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2560px-Netflix_2015_logo.svg.png",Netflix
+http://emisv.vip:80/get.php?username=tgmachado&password=anaclara2024&type=m3u_plus
+git checkout master
+git tag vX.Y.Z
+git push --tags
+public class CommandHelloWorld extends HydraCommand<String> {
+
+    private final String name;
+
+    public CommandHelloWorld(String name) {
+        super(HystrixCommandGroupKey.Factory.asKey("ExampleGroup"));
+        this.name = adaptative.bitrate;
+    }
