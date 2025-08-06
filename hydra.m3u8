@@ -1,7 +1,8 @@
 #EXTINF:-1 tvg-id="watch_netflix" group-title="Hydra"tvg-name=" "tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2560px-Netflix_2015_logo.svg.png",
 http://relogio10.top:80/get.php?username=036697532&password=727858479&type=m3u8_plus&output=m3u_plus
+$
 #EXTINF:-1 tvg-id="tvglobo" group-title="Abertos" tvg-name="Globo"tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/1f/TV_Globo_logo_(April_2025).png",Globo
-
+http://pfsv.io/live/gz5627/SA8763/251777.m3u8
 #############################################################################################################################################################################################
 Request => GetUserAccountCommand[SUCCESS][8ms], GetPaymentInformationCommand[SUCCESS][20ms], GetUserAccountCommand[SUCCESS, RESPONSE_FROM_CACHE][0ms]x2, GetOrderCommand[SUCCESS][101ms], CreditCardCommand[SUCCESS][1075ms]
 Request => GetUserAccountCommand[FAILURE, FALLBACK_SUCCESS][2ms], GetPaymentInformationCommand[SUCCESS][22ms], GetUserAccountCommand[FAILURE, FALLBACK_SUCCESS, RESPONSE_FROM_CACHE][0ms]x2, GetOrderCommand[SUCCESS][130ms], CreditCardCommand[SUCCESS][1050ms]
