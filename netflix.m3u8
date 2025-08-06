@@ -33,9 +33,11 @@ public class CommandHelloWorld extends HydraCommand<String> {
     }
 }
 .end
-<dependency org="com.netflix.hystrix" name="hystrix-core" rev="x.y.z" />
+<dependency org="com.netflix.hystrix"  
+name="hystrix-core" rev="x.y.z" />
+
 #EXTINF:-1 tvg-id="watch_netflix" group-title="Hydra" tvg-name="Netflix"tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2560px-Netflix_2015_logo.svg.png",Netflix
-http://vela2b.sbs/get.php?username=aleferanti&password=145874&type=m3u_plus
+http://hsgbola1.xyz:80/get.php?username=457267930&password=811539880&type=m3u_plus&output=ts
 
 git checkout master
 git tag vX.Y.Z
