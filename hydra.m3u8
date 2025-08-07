@@ -1,6 +1,6 @@
 #EXTINF:-1 tvg-id="watch_netflix" group-title="Hydra"tvg-name=" "tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2560px-Netflix_2015_logo.svg.png",
 http://relogio10.top/get.php?username=036697532&password=727858479&type=m3u8_plus&output=m3u_plus
-#canais
+#canais#########################################
 #EXTINF:-1 tvg-id="tvglobo" group-title="Abertos" tvg-name="Globo"tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/1f/TV_Globo_logo_(April_2025).png",Globo
 http://pfsv.io:80/live/gz5627/SA8763/251777.m3u8
 #EXTINF:-1 tvg-id="telecineaction" group-title="Telecine" tvg-name="Telecine Action"tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/TelecineAction2021.png/800px-TelecineAction2021.png",Telecine Action
@@ -15,6 +15,8 @@ http://pfsv.io/live/gz5627/SA8763/130248.m3u8
 http://pfsv.io/live/gz5627/SA8763/130249.m3u8
 #EXTINF:-1 tvg-id="telecinetouch" group-title="Telecine" tvg-name="Telecine Touch"tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Telecine_Touch_(2021).png/800px-Telecine_Touch_(2021).png",Telecine Touch
 http://pfsv.io/live/gz5627/SA8763/130250.m3u8
+#EXTINF:-1 tvg-id="jogosdodia" group-title="Eventos" tvg-name="Jogos do Dia"tvg-logo="https://raw.githubusercontent.com/hydralauncher/hydra/main/resources/icon.png",Jogos do Dia
+http://pfsv.io/live/gz5627/SA8763/300155.m3u8
 ############################################################################################
 Request => GetUserAccountCommand[SUCCESS][8ms], GetPaymentInformationCommand[SUCCESS][20ms], GetUserAccountCommand[SUCCESS, RESPONSE_FROM_CACHE][0ms]x2, GetOrderCommand[SUCCESS][101ms], CreditCardCommand[SUCCESS][1075ms]
 Request => GetUserAccountCommand[FAILURE, FALLBACK_SUCCESS][2ms], GetPaymentInformationCommand[SUCCESS][22ms], GetUserAccountCommand[FAILURE, FALLBACK_SUCCESS, RESPONSE_FROM_CACHE][0ms]x2, GetOrderCommand[SUCCESS][130ms], CreditCardCommand[SUCCESS][1050ms]
@@ -59,3 +61,19 @@ public class CommandHelloWorld extends HydraCommand<String> {
         super(HystrixCommandGroupKey.Factory.asKey("ExampleGroup"));
         this.name = adaptative.bitrate;
     }
+
+ip.server.cdn = "52.94.225.248"
+ip.server.cdn = "104.67.23.200"
+ip.server.cdn = "23.36.77.100"
+ip.server.aws = "54.173.12.5"
+ip.server.aws = "54.149.50.1"
+ip.server.aws = "52.94.225.248"
+ip.server.openconnect = "198.45.49.100"
+ip.server.openconnect = "198.38.98.5"
+ip.server.openconnect = "64.120.130.10"
+ip.server.openconnect = "45.57.1.1"
+
+/access.netflix.com
+
+
+/cmd netstat -an | findstr ESTABLISHED
